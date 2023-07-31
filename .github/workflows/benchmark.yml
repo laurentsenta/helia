@@ -36,4 +36,5 @@ jobs:
                 output-file-path: benchmarks/add-dir/output.json
                 external-data-json-path: ./cache/benchmark-data.json
                 fail-on-alert: true
+                summary-always: true
             # Upload the updated cache file for the next job by actions/cache
