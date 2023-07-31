@@ -33,7 +33,7 @@ jobs:
           uses: benchmark-action/github-action-benchmark@v1
           with:
                 tool: 'customSmallerIsBetter'
-                output-file-path: output.json
+                output-file-path: benchmarks/add-dir/output.json
                 external-data-json-path: ./cache/benchmark-data.json
                 fail-on-alert: true
             # Upload the updated cache file for the next job by actions/cache
