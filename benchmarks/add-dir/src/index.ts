@@ -207,21 +207,21 @@ async function main(): Promise<void> {
       return [
         {
           name: `${name} - ops/s`,
-          value: parseFloat(result?.hz.toFixed(RESULT_PRECISION)),
+          value: parseFloat(result?.hz.toFixed(RESULT_PRECISION)!),
           unit: "ops/s",
           range: "0..1000000",
           // extra: undefined,
         },
         {
           name: `${name} - ms/op`,
-          value: parseFloat(result?.period.toFixed(RESULT_PRECISION)),
+          value: parseFloat(result?.period.toFixed(RESULT_PRECISION)!),
           unit: "ms/op",
           range: "0..1000000",
           // extra: undefined,
         },
         {
           name: `${name} - p99`,
-          value: parseFloat(result?.p99.toFixed(RESULT_PRECISION)),
+          value: parseFloat(result?.p99.toFixed(RESULT_PRECISION)!),
           unit: "ms/op",
           range: "0..1000000",
           // extra: undefined,
