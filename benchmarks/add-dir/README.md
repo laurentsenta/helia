@@ -19,8 +19,10 @@ You can speed things up by removing js-ipfs from the `impls` array.
 To run:
 
 1. Add `benchmarks/*` to the `workspaces` entry in the root `package.json` of this repo
+   - why do we need this?
 2. Run
     ```console
+    # starting from the project's root (`helia/`)
     $ npm run reset
     $ npm i
     $ npm run build
